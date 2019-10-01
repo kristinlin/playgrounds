@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>evo's playground</title>
+
+<style type="text/css">
+
+	#lcontainer {
+		display:block;
+		width:100px;
+		height:auto;
+		margin-top:80px;
+		margin-left:80px;
+	}
+
+		#myBtn {
+  		display:block;
+		width:auto;
+		height:auto;
+		margin-top:5px;
+		margin-left:72px;
+		text-align:left;
+		font-family:"Lucida Console", Monaco, monospace;
+		color: #333;
+		font-size: 9px;
+		letter-spacing:1px;
+		text-decoration: none;
+		cursor:crosshair;
+		border:none;
+		background-color:#fff;
+		}
+
+	a {
+		text-align:left;
+		font-family:"Lucida Console", Monaco, monospace;
+		color: #333;
+		font-size: 9px;
+		letter-spacing:1px;
+		text-decoration: none;
+		cursor:crosshair;
+		-o-transition:.6s;
+  		-ms-transition:.6s;
+  		-moz-transition:.6s;
+  		-webkit-transition:.6s;
+  		transition:.6s;
+	}
+
+	a:hover {
+  		color: #fff;
+  		background-color:#000;
+	}
+
+
+	#name {
+		display:block;
+		width:100px;
+		height:auto;
+		margin-top:50px;
+		margin-left:80px;
+		font-family:"Lucida Console", Monaco, monospace;
+		letter-spacing:1px;
+		color: #000;
+		font-size:9px;
+		text-align:left;
+	}	
+
+
+	#pg1 img{
+		margin-top:-30px;
+		display:block;
+		max-width: 600px;
+		height:500px;
+		margin-left:650px;
+		position:absolute;
+	}
+
+	#map {
+ 	margin:0;
+ 	padding:0;
+ 	width:600px;
+ 	height:auto;
+ 	background:none;
+ 	font-family:"Lucida Console", Monaco, monospace;
+ 	font-size:9pt;
+	}
+
+	#map li {
+	 margin:0;
+	 padding:0;
+	 list-style:none;
+	}
+
+	#map li a {
+	 position:absolute;
+ 	display:block;
+    background:none;
+    text-decoration:none;
+ 	color:#000;
+	}
+
+	#map li a span { display:none; }
+
+	#map li a.nature:hover span {
+   position:relative;
+   display:block;
+   width:200px;
+   left:150px;
+   top:-90px;
+   border:1px solid #000;
+   background:#fff;
+   padding:5px;
+    filter:alpha(opacity=80);
+   opacity:0.8;
+    }
+
+    #map li a.death:hover span {
+   position:relative;
+   display:block;
+   width:200px;
+   left:150px;
+   top:10px;
+   border:1px solid #000;
+   background:#fff;
+   padding:5px;
+    filter:alpha(opacity=80);
+   opacity:0.8;
+    }
+
+   #map li a.book:hover span {
+   position:relative;
+   display:block;
+   width:200px;
+   left:-250px;
+   top:-60px;
+   border:1px solid #000;
+   background:#fff;
+   padding:5px;
+    filter:alpha(opacity=80);
+   opacity:0.8;
+    }
+
+   #map li a.om:hover span {
+   position:relative;
+   display:block;
+   width:200px;
+   left:-400px;
+   top:-100px;
+   border:1px solid #000;
+   background:#fff;
+   padding:5px;
+    filter:alpha(opacity=80);
+   opacity:0.8;
+    }
+
+   #map li a.space:hover span {
+   position:relative;
+   display:block;
+   width:200px;
+   left:40px;
+   top:140px;
+   border:1px solid #000;
+   background:#fff;
+   padding:5px;
+    filter:alpha(opacity=80);
+   opacity:0.8;
+    }
+
+    #map li a.texture:hover span {
+   position:relative;
+   display:block;
+   width:200px;
+   left:-200px;
+   top:-100px;
+   border:1px solid #000;
+   background:#fff;
+   padding:5px;
+    filter:alpha(opacity=80);
+   opacity:0.8;
+    }
+
+#map a.death {
+	background-color:none;
+ top:420px;
+ left:1100px;
+ width:100px;
+ height:80px;
+}
+ 
+#map a.book {
+	background-color:none;
+ top:230px;
+ left:920px;
+ width:90px;
+ height:40px;
+}
+ 
+#map a.om {
+	background-color:none;
+ top:440px;
+ left:862px;
+ width:70px;
+ height:70px;
+}
+ 
+ 
+#map a.nature {
+	background-color:none;
+ top:275px;
+ left:950px;
+ width:120px;
+ height:80px;
+}
+
+#map a.texture {
+	background-color:none;
+ top:305px;
+ left:840px;
+ width:80px;
+ height:80px;
+}
+
+
+	/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 45px;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fff;
+  margin: 7% auto; /* 15% from the top and centered */
+  padding: 50px;
+  width: 50%;
+  height:1000px;
+  font-family:"Lucida Console", Monaco, monospace;
+  line-height:18px;
+  font-size:10px;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: crosshair;
+}
+
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+    #play {
+      display: inline-block;
+      margin-left:73px;
+      margin-top:10px;
+      height:auto;
+    }
+
+    #pause {
+      display:none;
+      margin-left:73px;
+      margin-top:10px;
+      height:auto;
+    }
+
+    i {
+      cursor: crosshair;
+    }
+
+</style>
+
+
+</head>
+
+<body>
+
+<!-- Links -->
+<div id="lcontainer"><a href="index.html">/index</a><br>
+	<a href="ask.html">/ask</a>
+</div>
+
+
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">/about</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+  <div class="modal-body">
+    <p>ABOUT THE PROJECT</p>
+    <p>Childhood is full of imagination and exploration. Kids are amazingly adept at expressing ideas and emotions in their purest form. As we grow older, we learn the unspoken nuances of social interaction, we’re hurt by the world’s realities, we lose touch with the innocence and wonder of years past. We add layers and layers to our identity and self-expression, and soon enough it’s not that easy anymore to say who we are and what we’re feeling. <br><br>
+	
+	How do we peel back those layers?<br><br>
+
+	The Internet is known as a place to masquerade, but it also gives us the ability to reveal ourselves and be vulnerable. This project aims to explore how through expression and interactivity in a digital space, we can rediscover the core of who we really are, starting from our own childhood.<br><br>
+
+	There are four islands on the main page. Each island is a collage that corresponds with one of the four artists and creators of this website. The goal was to create an imaginative space for exploration - a playground our younger selves could only dream of.<br><br>
+
+	Be nosy! Move your mouse around our playgrounds! We invite you to discover the little things that reveal the essence of who we were as kids (and who we are today, because we’re all kids at heart).</p>
+  </div>
+</div>
+
+</div>
+
+<!-- Content -->
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<audio id="audio" src="src/audio/evoaudio.mp3"></audio> 
+
+<div id="name">evo's playground</div>
+<i id="pause" class="material-icons">pause</i>
+  <i id="play" class="material-icons">play_arrow</i>
+
+<div id="pg1"><img src="src/img/evocollage.png"></div>
+
+<ul id="map">
+ <li><a class="death" href="#"><span>
+  We are stuck forever in samsara until we reach enlightenment. Impermanence reminds and motivates.</span></a></li>
+ 
+ <li><a class="book" href="#"><span>
+ My mom would read to me everyday before bed until my sister was born. Taro Gomi wrote all my favorites.
+ </span></a></li>
+   
+ <li><a class="om" href="#"><span>
+  My dad taught me the innermost heart of Avalokiteshvara when I was 3. I've repeated this mantra more times than any other word I've ever spoken.</span></a></li>
+   
+ <li><a class="nature" href="#"><span><b></b>
+ The smell of jasmine and Taiwanese mountains after the rain. The way grass feels under my feet. The way the skies are painted with clouds, like messages from the gods meant for me to decipher.
+ </span></a></li>
+
+   <li><a class="texture" href="#"><span><b></b>
+Instead of stuffed animals, I would run my hands over my mom's old silk pajamas to sleep. I touch to learn, to remember, to feel.
+</span></a></li>
+</ul>
+
+
+</body>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+var myAudio = document.getElementById("audio");
+		var playbtn = document.getElementById("play");
+		var pausebtn = document.getElementById("pause");
+		playbtn.addEventListener("click", togglePlay);
+		pausebtn.addEventListener("click", togglePlay);
+		var isPlaying = false;
+
+		function togglePlay() {
+			if (isPlaying) {
+				myAudio.pause()
+				playbtn.style.display = "inline-block";
+				pausebtn.style.display = "none";
+			} else {
+				myAudio.play();
+				playbtn.style.display = "none";
+				pausebtn.style.display = "inline-block";
+			}
+		};
+		myAudio.onplaying = function() {
+			isPlaying = true;
+		};
+		myAudio.onpause = function() {
+			isPlaying = false;
+		}
+	
+
+</script>
+
+</html>

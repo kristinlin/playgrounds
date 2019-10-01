@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>kristin's playground</title>
+
+	<style type="text/css">
+
+		#lcontainer {
+			display:block;
+			width:100px;
+			height:auto;
+			margin-top:80px;
+			margin-left:80px;
+		}
+
+		#myBtn {
+			display:block;
+			width:auto;
+			height:auto;
+			margin-top:5px;
+			margin-left:72px;
+			text-align:left;
+			font-family:"Lucida Console", Monaco, monospace;
+			color: #333;
+			font-size: 9px;
+			letter-spacing:1px;
+			text-decoration: none;
+			cursor:crosshair;
+			border:none;
+			background-color: #fff;
+		}
+
+		a {
+			text-align:left;
+			font-family:"Lucida Console", Monaco, monospace;
+			color: #333;
+			font-size: 9px;
+			letter-spacing:1px;
+			text-decoration: none;
+			cursor:crosshair;
+			-o-transition:.6s;
+			-ms-transition:.6s;
+			-moz-transition:.6s;
+			-webkit-transition:.6s;
+			transition:.6s;
+		}
+
+		a:hover {
+			color: #fff;
+			background-color:#000;
+		}
+
+
+		#pg1 img{
+			display:block;
+			height:auto;
+			margin-top: 40px;
+			max-width: 600px;
+			margin-left:650px;
+		}
+
+		#name {
+			display:block;
+			width:100px;
+			height:auto;
+			margin-top:50px;
+			margin-left:80px;
+			font-family:"Lucida Console", Monaco, monospace;
+			letter-spacing:1px;
+			color: #000;
+			font-size:9px;
+			text-align:left;
+		}	
+
+		.text {
+			font-family: "lucida console", Monaco, monospace;
+			display: block;
+			position: absolute;
+			word-wrap: break-word;
+			font-size: 9px;
+			border:1px solid #000;
+			padding:5px;
+			filter:alpha(opacity=80);
+			opacity:0.01;
+		}
+
+		#text1 {
+			left: 430px;
+			top: 400px;
+			width: 10%;
+		}
+
+		#text2 {
+			left: 1280px;
+			top: 700px;
+			width: 10%;
+		}
+
+		#text3 {
+			left: 1180px;
+			top: 280px;
+			width: 10%;
+		}
+
+		#text4 {
+			left: 850px;
+			top: 190px;
+			width: 10%;
+		}
+
+		#text5 {
+			left: 630px;
+			top: 770px;
+			width: 10%;
+		}
+
+		area {	  			
+			cursor: crosshair;
+		}
+
+		map {  			
+			cursor: crosshair;
+		}
+
+
+		/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			left: 45px;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0); /* Black w/ opacity */
+		}
+
+		/* Modal Content/Box */
+		.modal-content {
+			background-color: #fff;
+			margin: 7% auto; /* 15% from the top and centered */
+			padding: 50px;
+			width: 50%;
+			height:1000px;
+			font-family:"Lucida Console", Monaco, monospace;
+			line-height:18px;
+			font-size:10px;
+			animation-name: animatetop;
+			animation-duration: 0.4s;
+		}
+
+		/* The Close Button */
+		.close {
+			color: #aaa;
+			float: right;
+			font-size: 15px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: black;
+			text-decoration: none;
+			cursor: crosshair;
+		}
+
+
+		/* Modal Body */
+		.modal-body {padding: 2px 16px;}
+
+		/* Add Animation */
+		@keyframes animatetop {
+			from {top: -300px; opacity: 0}
+			to {top: 0; opacity: 1}
+		}
+
+		#play {
+			display: inline-block;
+			margin-left:73px;
+			margin-top:10px;
+			height:auto;
+		}
+
+		#pause {
+			display:none;
+			margin-left:73px;
+			margin-top:10px;
+			height:auto;
+		}
+
+		i {
+			cursor: crosshair;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+
+	<!-- This is a HTML comment, what appears here will not show up on the page -->
+	<!-- Links -->
+	<div id="lcontainer"><a href="index.html">/index</a><br>
+		<a href="ask.html">/ask</a>
+	</div>
+	<!-- Trigger/Open The Modal -->
+	<button id="myBtn">/about</button>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="modal-body">
+				<p>ABOUT THE PROJECT</p>
+				<p>Childhood is full of imagination and exploration. Kids are amazingly adept at expressing ideas and emotions in their purest form. As we grow older, we learn the unspoken nuances of social interaction, we’re hurt by the world’s realities, we lose touch with the innocence and wonder of years past. We add layers and layers to our identity and self-expression, and soon enough it’s not that easy anymore to say who we are and what we’re feeling. <br><br>
+
+					How do we peel back those layers?<br><br>
+
+					The Internet is known as a place to masquerade, but it also gives us the ability to reveal ourselves and be vulnerable. This project aims to explore how through expression and interactivity in a digital space, we can rediscover the core of who we really are, starting from our own childhood.<br><br>
+
+					There are four islands on the main page. Each island is a collage that corresponds with one of the four artists and creators of this website. The goal was to create an imaginative space for exploration - a playground our younger selves could only dream of.<br><br>
+
+				Be nosy! Move your mouse around our playgrounds! We invite you to discover the little things that reveal the essence of who we were as kids (and who we are today, because we’re all kids at heart).</p>
+			</div>
+		</div>
+
+	</div>	
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	
+	<audio id="audio" src="src/audio/audio2.mp3"></audio>	
+	<div id="name">kristin's playground</div>
+	<i id="pause" class="material-icons">pause</i>
+	<i id="play" class="material-icons">play_arrow</i>
+
+	<!-- Image Map Generated by http://www.image-map.net/ -->
+	<div id=body>
+		<div id="pg1">
+			<img id="img" src="src/img/kristincollage.png" usemap="#image-map">
+			<map name="image-map">
+				<area id="part1" target="" alt="" coords="73,137,154,188,99,285,18,249" shape="poly">
+				<area id="part2" target="" alt="" coords="506,526,555,398,579,407,530,547" shape="poly">
+				<area id="part3" target="" alt="" coords="425,62,432,152,525,149" shape="poly">
+				<area id="part4" target="" alt="" coords="179,45,365,3,384,108,209,94" shape="poly">
+				<area id="part5" target="" alt="" coords="246,428,282,288,308,341,294,439" shape="poly">
+			</map>
+		</div>
+		<p class="text" id="text1">In fifth grade, I was the tallest child by 2 inches. Here, I can experience life from all kinds of varying heights. Short or tall or in-between.</p>
+		<p class="text" id="text2">To my twelve year old self who wanted so badly to be more than just human.</p>
+		<p class="text" id="text3">Quiet and shy do not hold negative connotations here. They do not follow after, "she's very smart, but..." Instead, quiet and shy are graciously accepted with a smile. </p>
+		<p class="text" id="text4">Fall back and forth between my additions: the digital screen and the physical page. Read and play and read and play.</p>
+		<p class="text" id="text5">There was nothing more cozy for me as a child than snoozing on my grandma's or my dad's back. Riding piggyback all the way home.</p>
+	</div>
+
+	<script type="text/javascript">
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+		// When the user clicks on the button, open the modal 
+		btn.onclick = function() {
+			modal.style.display = "block";
+		}
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+
+
+
+		var text1 = document.getElementById("text1");
+		var text2 = document.getElementById("text2");
+		var text3 = document.getElementById("text3");
+		var text4 = document.getElementById("text4");
+		var text5 = document.getElementById("text5");
+
+		var pic1 = document.getElementById("part1");
+		var pic2 = document.getElementById("part2");
+		var pic3 = document.getElementById("part3");
+		var pic4 = document.getElementById("part4");
+		var pic5 = document.getElementById("part5");
+
+		pic1.addEventListener("mouseover", 
+			function() {text1.style.opacity = 0.8});
+		pic1.addEventListener("mouseout", 
+			function() {text1.style.opacity = 0});
+		pic2.addEventListener("mouseover", 
+			function() {text2.style.opacity = 0.8});
+		pic2.addEventListener("mouseout", 
+			function() {text2.style.opacity = 0});
+		pic3.addEventListener("mouseover", 
+			function() {text3.style.opacity = 0.8});
+		pic3.addEventListener("mouseout", 
+			function() {text3.style.opacity = 0});
+		pic4.addEventListener("mouseover", 
+			function() {text4.style.opacity = 0.8});
+		pic4.addEventListener("mouseout", 
+			function() {text4.style.opacity = 0});
+		pic5.addEventListener("mouseover", 
+			function() {text5.style.opacity = 0.8});
+		pic5.addEventListener("mouseout", 
+			function() {text5.style.opacity = 0});
+
+		var myAudio = document.getElementById("audio");
+		var playbtn = document.getElementById("play");
+		var pausebtn = document.getElementById("pause");
+		playbtn.addEventListener("click", togglePlay);
+		pausebtn.addEventListener("click", togglePlay);
+		var isPlaying = false;
+
+		function togglePlay() {
+			if (isPlaying) {
+				myAudio.pause()
+				playbtn.style.display = "inline-block";
+				pausebtn.style.display = "none";
+			} else {
+				myAudio.play();
+				playbtn.style.display = "none";
+				pausebtn.style.display = "inline-block";
+			}
+		};
+		myAudio.onplaying = function() {
+			isPlaying = true;
+		};
+		myAudio.onpause = function() {
+			isPlaying = false;
+		}
+	</script>
+
+</body>
+
+</html>
