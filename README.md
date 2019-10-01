@@ -12,6 +12,7 @@ I used HTML and CSS in order to create organic image maps for my playground and 
 - HTML
 - CSS
 - Javascript
+- Adobe Photoshop
 
 #### About
 Childhood is full of imagination and exploration. Kids are amazingly adept at expressing ideas and emotions in their purest form. As we grow older, we learn the unspoken nuances of social interaction, we’re hurt by the world’s realities, we lose touch with the innocence and wonder of years past. We add layers and layers to our identity and self-expression, and soon enough it’s not that easy anymore to say who we are and what we’re feeling.                                   
